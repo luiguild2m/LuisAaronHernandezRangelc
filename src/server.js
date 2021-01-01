@@ -14,6 +14,10 @@ app.use(express.json())
 app.use(cors())
 app.use(morgan('dev'))
 
+app.get('/', (req, res) => {
+  res.json({message: "conectado"})
+})
+
 app.use('/equipos', equipoRouter)
 //app.use('/products', productRouter)
 
