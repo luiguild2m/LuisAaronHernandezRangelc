@@ -6,7 +6,7 @@
   "author": "LuisAaronHernandezRangel <lahr.4444@gmail.com>",
   "license": "MIT",
   "engines": {
-    "node": "v14.16.0",
+    "node": "14.16.0",
     "yarn":"1.22.10" 
   },
   "scripts": {
