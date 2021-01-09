@@ -1,18 +1,84 @@
+const { INTEGER } = require("sequelize")
+
 module.exports = (sequelize, DataTypes) => {
     const equipoSchema = {
-      name: {
+      codigo:{
+        type:DataTypes.STRING,
+        allowNull: false,
+        defaultValue: "Volrod"     },
+      columna1:{
+        type: DataTypes.INTEGER,
+        allowNull:false,
+        defaultValue:0
+      },
+      nombrede:{
+        type:DataTypes.STRING,
+        allowNull:false,
+        defaultValue: "Volrod"
+      },
+      marca:{
+        type:DataTypes.STRING,
+        allowNull:false,
+        defaultValue:"Volrod"
+      },
+      modelo:{
+        type:DataTypes.STRING,
+        allowNull:false,
+        defaultValue:"Volrod"
+      },
+      numeros:{
+        type:DataTypes.STRING,
+        allowNull:false,
+        defaultValue:"Volrod"
+      },
+      codigoIn:{
+        type:DataTypes.STRING,
+        allowNull:false,
+        defaultValue:"Volrod"
+      },
+      fechadc:{
+        type:DataTypes.DATEONLY,
+        allowNull:true,
+
+      },
+      observacion: {
         type: DataTypes.STRING,
         allowNull: false,
         defaultValue: 'Jane Doe'
       },
-      email: {
-        type: DataTypes.STRING,
+      prestadoa:{
+        type:DataTypes.STRING,
         allowNull: false,
-        unique: true,
-        validate: {
-          isEmail: true
-        }
-      }
+        defaultValue:"Volrod"
+      },
+      salida:{
+        type:DataTypes.DATEONLY,
+        allowNull:true,
+
+      },
+      ingreso:{
+        type:DataTypes.DATEONLY,
+        allowNull: true,
+
+      },
+      reportedd:{
+        type:DataTypes.STRING,
+        allowNull:false,
+        defaultValue:"Volrod"
+      },
+      estadoe:{
+        type:DataTypes.STRING,
+        allowNull:false,
+        defaultValue:"Volrod"
+      },
+    //   email: {
+    //     type: DataTypes.STRING,
+    //     allowNull: false,
+    //     unique: true,
+    //     validate: {
+    //       isEmail: true
+    //     }
+    //   }
     }
   
     const equipoOps = {
